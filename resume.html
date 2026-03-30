@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lusithi Yamkela | Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background: #f9fafb;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.7s ease;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="text-gray-900">
+
+<!-- HEADER -->
+<header class="w-full border-b bg-white px-10 py-4 flex justify-between items-center">
+  <h1 class="font-semibold text-lg">Lusithi Yamkela</h1>
+  <a href="index.html" class="text-sm underline">Back to Portfolio</a>
+</header>
+
+<!-- RESUME -->
+<section class="py-20 px-6 fade-in">
+  <div class="max-w-5xl mx-auto">
+
+    <!-- TITLE -->
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-semibold">Yamkela Lusithi</h2>
+      <p class="text-sm text-gray-600 mt-2">
+        AI Language Training | Prompt Engineering | Digital Learning
+      </p>
+    </div>
+
+    <!-- CARD -->
+    <div class="bg-white p-10 rounded-2xl border shadow-sm space-y-10">
+
+      <!-- SUMMARY -->
+      <div>
+        <h3 class="text-lg font-semibold mb-2 text-blue-600">Professional Summary</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          Digital Learning Developer with a background in language education and AI-supported learning design.
+          Experience in prompt engineering, AI output evaluation, and educational content development.
+          Currently completing an Honours degree focused on language, literacies, and AI in education.
+        </p>
+      </div>
+
+      <!-- SKILLS -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-red-500">Core Skills</h3>
+        <div class="grid md:grid-cols-2 gap-3 text-sm text-gray-700">
+          <p>• AI Language Training (RLHF, evaluation, annotation)</p>
+          <p>• Prompt Engineering (few-shot, structured prompts)</p>
+          <p>• Data Annotation & Instruction Tuning</p>
+          <p>• AI Output Evaluation (accuracy, clarity, safety)</p>
+          <p>• Frontend Development (HTML, CSS, JavaScript)</p>
+          <p>• Digital Learning Design</p>
+        </div>
+      </div>
+
+      <!-- EXPERIENCE -->
+      <div>
+        <h3 class="text-lg font-semibold mb-2 text-yellow-600">Experience</h3>
+        <div class="text-sm text-gray-700 space-y-2">
+          <p class="font-medium">
+            Postgraduate Researcher - University of Johannesburg (2025 - 2026)
+          </p>
+          <ul class="list-disc ml-5 space-y-1">
+            <li>Conduct research on digital literacy and language learning</li>
+            <li>Apply prompt engineering to improve AI-generated responses</li>
+            <li>Analyse language use in digital learning environments</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PROJECTS -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-blue-600">Projects</h3>
+
+        <div class="space-y-4 text-sm text-gray-700">
+
+          <div>
+            <p class="font-medium">MoneySave Jr - Financial Literacy Interface</p>
+            <p>Built using HTML, CSS, JavaScript with structured prompts for learning interaction.</p>
+          </div>
+
+          <div>
+            <p class="font-medium">NoteCraft - Study Notes Web App</p>
+            <p>Developed using Python (Flask) and frontend technologies for structured note workflows.</p>
+          </div>
+
+          <div>
+            <p class="font-medium">The Academic - Research Platform</p>
+            <p>Designed a structured interface for accessing academic resources.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-red-500">Education</h3>
+        <div class="text-sm text-gray-700 space-y-2">
+          <p><strong>B.Ed Honours (Language, Literacies & Literature)</strong> - University of Johannesburg (2026)</p>
+          <p><strong>Bachelor of Education</strong> - Walter Sisulu University (2024)</p>
+        </div>
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-yellow-600">Certifications</h3>
+        <div class="grid md:grid-cols-2 gap-2 text-sm text-gray-700">
+          <p>• Prompt Engineering (upGrad)</p>
+          <p>• Artificial Intelligence (Saylor)</p>
+          <p>• AI Fluency Framework (Anthropic)</p>
+          <p>• Full Stack Development (FNB App Academy)</p>
+          <p>• Python Web Development (Udemy)</p>
+        </div>
+      </div>
+
+      <!-- TOOLS -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-blue-600">Tools</h3>
+        <div class="flex flex-wrap gap-3 text-sm">
+          <span class="px-3 py-1 border rounded-full">HTML</span>
+          <span class="px-3 py-1 border rounded-full">CSS</span>
+          <span class="px-3 py-1 border rounded-full">JavaScript</span>
+          <span class="px-3 py-1 border rounded-full">Python</span>
+          <span class="px-3 py-1 border rounded-full">GitHub</span>
+          <span class="px-3 py-1 border rounded-full">Figma</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
